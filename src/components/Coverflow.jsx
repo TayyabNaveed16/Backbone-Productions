@@ -1,21 +1,21 @@
 import React, { useEffect, useRef } from "react";
-import mountain from "../assets/images/infinite-loop-01.jpg";
-import forest from "../assets/images/infinite-loop-01.jpg";
-import lake from "../assets/images/infinite-loop-01.jpg";
-import ocean from "../assets/images/infinite-loop-01.jpg";
-import dunes from "../assets/images/infinite-loop-01.jpg";
-import stars from "../assets/images/infinite-loop-01.jpg";
-import waterfall from "../assets/images/infinite-loop-01.jpg";
+import GenMB_Fast from "../assets/images/Projects/GenMB_Fast.jpg";
+import GenMB_GIKI from "../assets/images/Projects/GenMB_GIKI.jpg";
+// import lake from "../assets/images/infinite-loop-01.jpg";
+import BinanceCommunityMeetup from "../assets/images/Projects/BinanceCommunityMeetup.jpg";
+import BinanceCommunityMeetup_2 from "../assets/images/Projects/BinanceCommunityMeetup_2.jpg";
+import JazzSalesConference from "../assets/images/Projects/JazzSalesConference.jpg";
+import JazzSalesConference_2 from "../assets/images/Projects/JazzSalesConference_2.jpg";
 
 
 const images = [
-  { src: mountain, title: "Mountain Landscape", description: "Majestic peaks covered in snow during golden hour" },
-  { src: forest, title: "Forest Path", description: "A winding trail through ancient woodland" },
-  { src: lake, title: "Lake Reflection", description: "Serene waters mirroring the surrounding landscape" },
-  { src: ocean, title: "Ocean Sunset", description: "Golden hour over endless ocean waves" },
-  { src: dunes, title: "Desert Dunes", description: "Rolling sand dunes under vast blue skies" },
-  { src: stars, title: "Starry Night", description: "Countless stars illuminating the dark sky" },
-  { src: waterfall, title: "Waterfall", description: "Cascading water through lush green forest" },
+  { src: GenMB_GIKI, title: "GenMB GIKI", description: "A cutting-edge solution for modern applications" },
+  { src: GenMB_Fast, title: "GenMB Fast", description: "A fast and efficient solution for your needs" },
+  { src: JazzSalesConference, title: "Jazz Sales Conference", description: "Networking and sales training in a lively jazz atmosphere" },
+  { src: BinanceCommunityMeetup, title: "Binance Community Meetup", description: "Connecting crypto enthusiasts in a vibrant community event" },
+  { src: BinanceCommunityMeetup_2, title: "Binance Community Meetup", description: "Connecting crypto enthusiasts in a vibrant community event" },
+  { src: JazzSalesConference, title: "Jazz Sales Conference", description: "Networking and sales training in a lively jazz atmosphere" },
+  { src: JazzSalesConference_2, title: "Jazz Sales Conference", description: "Networking and sales training in a lively jazz atmosphere" },
 ];
 
 export default function Coverflow() {
@@ -164,6 +164,10 @@ export default function Coverflow() {
           </div>
 
 
+        </div>
+
+
+        <div className="controls">
           <div className="dots-container"></div>
 
           <button className="play-pause-button">

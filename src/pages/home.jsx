@@ -1,18 +1,35 @@
 import WhatWeDoCard from "../components/WhatWeDoCardActivations.jsx";
-import WhatWeDoCardEvents from "../components/WhatWeDoCardEvents.jsx";
-import WhatWeDoCardContent from "../components/WhatWeDoCardContent.jsx";
-import WhatWeDoCardTalent from "../components/WhatWeDoCardTalent.jsx";
+import WhatWeDoCardCorporateRetreats from "../components/WhatWeDoCardCorporateRetreats.jsx";
+import WhatWeDoCardCreativeDesign from "../components/WhatWeDoCardCreativeDesign.jsx";
+import WhatWeDoCardOutOfHome from "../components/WhatWeDoCardOutOfHome.jsx";
 import Coverflow from "../components/Coverflow.jsx";
+import Lottie from "lottie-react";
+import animationData from "../assets/Web Development.json";
+
 
 export default function Home() {
     return (
+
+
+
         <div className="home">
+
+
+            <div className="lottieFloating">
+                <Lottie animationData={animationData} loop />
+            </div>
+
+
+
             <div className="HeroSection">
 
 
 
 
             </div>
+
+
+
 
             <div className="WhatWeDoSection">
                 <h2>
@@ -25,9 +42,9 @@ export default function Home() {
                 <div className="WhatWeDoCardsWrapper">
                     <div className="WhatWeDoCardsRow">
                         <WhatWeDoCard />
-                        <WhatWeDoCardEvents />
-                        <WhatWeDoCardContent />
-                        <WhatWeDoCardTalent />
+                        <WhatWeDoCardCorporateRetreats />
+                        <WhatWeDoCardCreativeDesign />
+                        <WhatWeDoCardOutOfHome />
                     </div>
 
                 </div>
@@ -35,12 +52,19 @@ export default function Home() {
 
 
 
-            <div className="ClientsSaySection">
-                <h2 >Where <span className="highlight">We've</span> Been Up To</h2>
+            <div className="WhatWeHaveBeenUpTo">
+                <h2 >What <span className="highlight">We've</span> Been Up To</h2>
                 <div className="coverflowDiv">
                     <Coverflow />
                 </div>
             </div>
+
+
+
+            {/* <div className="ContactUsSection">
+                <h2 ><span className="highlight">Contact</span>Us</h2>
+
+            </div> */}
 
 
 

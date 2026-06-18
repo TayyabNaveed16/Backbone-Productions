@@ -2,6 +2,19 @@
     overflow-x: hidden;
 }
 
+.lottieFloating {
+    position: fixed;
+    top: 90px;
+    /* pushes it below header */
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    z-index: 9999;
+    pointer-events: none;
+    /* prevents blocking clicks */
+}
+
+
 .HeroSection {
     background-image: url('../assets/images/infinite-loop-01.jpg');
     background-size: cover;
@@ -13,20 +26,18 @@
 }
 
 .WhatWeDoSection {
-    height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    background-color: white;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-
+    background-color: white;
+    padding: 40px 20px;
 }
 
 .WhatWeDoSection h2 {
     text-align: center;
     font-size: 65px;
-    padding-top: 40px;
+    padding-top: 30px;
     font-family: "Poppins", sans-serif;
 
 }
@@ -34,7 +45,6 @@
 .WhatWeDoSection h2 .highlight {
     color: #adf201;
 }
-
 
 
 .WhatWeDoSection p {
@@ -65,27 +75,46 @@
 }
 
 
-.ClientsSaySection {
-    height: 120vh;
-    background-color: whitesmoke;
+.WhatWeHaveBeenUpTo {
+    min-height: 100dvh;
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 40px 20px;
 }
 
-.ClientsSaySection h2 {
+.WhatWeHaveBeenUpTo h2 {
     text-align: center;
     font-size: 65px;
-    padding-top: 40px;
+    padding-top: 30px;
+    font-family: "Poppins", sans-serif;
 }
 
 
-.ClientsSaySection h2 .highlight {
+.WhatWeHaveBeenUpTo h2 .highlight {
     color: #adf201;
 }
 
 .coverflowDiv {
-    position: absolute;
-    margin-top: 100px;
+    position: relative;
+}
+
+
+.ContactUsSection {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: red;
+    padding: 40px 20px;
+}
+
+.ContactUsSection h2 {
+    text-align: center;
+    font-size: 65px;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+
 }
