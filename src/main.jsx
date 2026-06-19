@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 //CSS Imports
 import './App.css';
 import './components/Header.css';
-import './pages/home.css';
+import './pages/Home.css';
 import './components/Coverflow.css';
 
 
