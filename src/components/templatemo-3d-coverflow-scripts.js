@@ -14,18 +14,21 @@ const dotsContainer = document.getElementById('dots');
 const currentTitle = document.getElementById('current-title');
 const currentDescription = document.getElementById('current-description');
 const container = document.querySelector('.coverflow-container');
-const menuToggle = document.getElementById('menuToggle');
-const mainMenu = document.getElementById('mainMenu');
 let currentIndex = 3;
 let isAnimating = false;
 
 // Mobile menu toggle
-if (menuToggle && mainMenu) {
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        mainMenu.classList.toggle('active');
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const mainMenu = document.getElementById('mainMenu');
+
+    if (!menuToggle || !mainMenu) return;
+
+    menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        mainMenu.classList.toggle("active");
     });
-}
+});
 
 // Close mobile menu when clicking on menu items (except external links)
 document.querySelectorAll('.menu-item:not(.external)').forEach(item => {
