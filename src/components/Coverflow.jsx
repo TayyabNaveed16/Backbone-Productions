@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import GenMB_Fast from "../assets/images/projects/BinanceCommunityMeetup.jpg";
-import GenMB_GIKI from "../assets/images/projects/GenMB_GIKI.jpg";
-import BinanceCommunityMeetup from "../assets/images/projects/BinanceCommunityMeetup.jpg";
-import BinanceCommunityMeetup_2 from "../assets/images/projects/BinanceCommunityMeetup_2.jpg";
-import JazzSalesConference from "../assets/images/projects/JazzSalesConference.jpg";
-import JazzSalesConference_2 from "../assets/images/projects/JazzSalesConference_2.jpg";
+import GenMB_Fast from "../assets/images/projects/genmb_fast.jpg";
+import GenMB_GIKI from "../assets/images/projects/genmb_giki.jpg";
+import BinanceCommunityMeetup from "../assets/images/projects/binancecommunitymeetup.jpg";
+import BinanceCommunityMeetup_2 from "../assets/images/projects/binancecommunitymeetup_2.jpg";
+import JazzSalesConference from "../assets/images/projects/jazzsalesconference.jpg";
+import JazzSalesConference_2 from "../assets/images/projects/jazzsalesconference_2.jpg";
 
 
 const images = [
