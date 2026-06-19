@@ -20,15 +20,8 @@ export default function Home() {
             </div>
 
 
-
             <div className="HeroSection">
-
-
-
-
             </div>
-
-
 
 
             <div className="WhatWeDoSection">
