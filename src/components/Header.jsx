@@ -32,10 +32,14 @@ export default function Header({ navigate }) {
 
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <li onClick={() => navigate("/")}>Home</li>
-          <li onClick={() => navigate("/services")}>What We Do</li>
+          {/* <li onClick={() => navigate("/services")}>What We Do</li>
           <li onClick={() => navigate("/about-us")}>Testimonials</li>
           <li onClick={() => navigate("/gallery")}>Gallery</li>
-          <li onClick={() => navigate("/contact-us")}>Contact</li>
+          <li onClick={() => navigate("/contact-us")}>Contact</li> */}
+          <li onClick={() => navigate("/")}>What We Do</li>
+          <li onClick={() => navigate("/")}>Testimonials</li>
+          <li onClick={() => navigate("/")}>Gallery</li>
+          <li onClick={() => navigate("/")}>Contact</li>
         </ul>
       </div>
     </nav>
