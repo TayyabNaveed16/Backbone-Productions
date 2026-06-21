@@ -61,7 +61,7 @@
     color: white;
     padding: clamp(10px, 1vw, 15px) clamp(3vw, 3.0vw, 90px);
     transition: all 0.3s ease;
-    font-size: clamp(15px, 1.6vw, 30px);
+    font-size: clamp(17px, 1.6vw, 30px);
 }
 
 .nav-links li:hover {
