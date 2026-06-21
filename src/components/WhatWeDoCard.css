@@ -1,36 +1,33 @@
-.wwd-card{
-    background-color: #f9f9f9;
+.wwd-card {
+    background-color: black;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    justify-content: center;
-    width: 350px;
     height: 400px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: black;
-    transition: transform 0.3s ease;
+    width: 100%;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-.wwd-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.wwd-card p1 {
-    font-size: 18px;
-    color: white;
-}
-
-.wwd-card:hover {
-    transform: scale(1.10);
-    background-color: #adf201;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 
-.wwd-card:hover h3 p1 {
+.wwd-card h3 {
+    font-size: clamp(20px, 4vw, 26px);
+    margin-top: 10px;
+    color: white;
+}
+
+.wwd-card p {
+    font-size: clamp(16px, 1vw, 18px);
+    text-align: start;
+    color: white;
+}
+
+.wwd-card:hover {
+    transform: scale(1.05);
+    background-color: #adf201;
+}
+
+.wwd-card:hover h3,
+.wwd-card:hover p {
     color: black;
 }

@@ -1,0 +1,50 @@
+/* WRAPPER */
+/* WRAPPER */
+.WhatWeDoCardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* ========================================= */
+/* Laptop & Tablet Landscape */
+/* ========================================= */
+
+@media (max-width: 1023px) {
+
+    .WhatWeDoCardsWrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+/* ========================================= */
+/* Tablet & Mobile */
+/* ========================================= */
+
+@media (max-width: 1024px) {
+
+    .WhatWeDoCardsWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ========================================= */
+/* Small Phones */
+/* ========================================= */
+
+@media (max-width: 479px) {
+
+    .WhatWeDoCardsWrapper {
+        grid-template-columns: 1fr;
+    }
+
+
+
+}

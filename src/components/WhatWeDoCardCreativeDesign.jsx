@@ -11,7 +11,7 @@ export default function WhatWeDoCardCreativeDesign() {
 
       <h3>Creative Design</h3>
       
-      <p1>Our creative and design services transform ideas into compelling visual narratives. From branding systems to campaign assets, we ensure every design communicates clearly, stands out visually, and reflects your brand's personality with precision.</p1>
+      <p>Our creative and design services transform ideas into compelling visual narratives. From branding systems to campaign assets, we ensure every design communicates clearly, stands out visually, and reflects your brand's personality with precision.</p>
 
     </div>
   );

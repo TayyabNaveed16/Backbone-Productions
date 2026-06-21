@@ -11,7 +11,7 @@ export default function WhatWeDoCard() {
 
       <h3>Brand Activations</h3>
 
-      <p1>We design and execute immersive brand activations that bring your identity to life in meaningful, interactive ways. From concept to execution, we focus on creating experiences that engage audiences, spark conversations, and strengthen emotional connection with your brand.</p1>
+      <p>We design and execute immersive brand activations that bring your identity to life in meaningful, interactive ways. From concept to execution, we focus on creating experiences that engage audiences, spark conversations, and strengthen emotional connection with your brand.</p>
 
     </div>
   );

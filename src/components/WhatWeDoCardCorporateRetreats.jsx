@@ -11,7 +11,7 @@ export default function WhatWeDoCardCorporateRetreats() {
 
       <h3>Corporate Retreats</h3>
       
-      <p1>We plan and deliver thoughtfully curated corporate retreats that balance productivity with experience. Each retreat is designed to foster collaboration, improve team alignment, and create an environment where ideas can grow and relationships can strengthen.</p1>
+      <p>We plan and deliver thoughtfully curated corporate retreats that balance productivity with experience. Each retreat is designed to foster collaboration, improve team alignment, and create an environment where ideas can grow and relationships can strengthen.</p>
 
     </div>
   );

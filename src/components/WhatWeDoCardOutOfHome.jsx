@@ -11,7 +11,7 @@ export default function WhatWeDoCardOutOfHome() {
 
       <h3>Out of Home</h3>
       
-      <p1>We develop impactful out-of-home advertising strategies that place your brand in high-visibility environments. Through thoughtful placement and strong visual execution, we help you reach wider audiences and build strong public recognition.</p1>
+      <p>We develop impactful out-of-home advertising strategies that place your brand in high-visibility environments. Through thoughtful placement and strong visual execution, we help you reach wider audiences and build strong public recognition.</p>
 
     </div>
   );

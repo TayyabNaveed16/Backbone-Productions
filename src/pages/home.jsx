@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className="home">
 
-
+            
             <div className="lottieFloating">
                 <Lottie animationData={animationData} loop />
             </div>
@@ -31,16 +31,16 @@ export default function Home() {
                 <p>Turning ideas into campaigns, campaigns into connections, and connections into results. That’s how we make marketing work for you.</p>
 
 
-
                 <div className="WhatWeDoCardsWrapper">
-                    <div className="WhatWeDoCardsRow">
-                        <WhatWeDoCard />
-                        <WhatWeDoCardCorporateRetreats />
-                        <WhatWeDoCardCreativeDesign />
-                        <WhatWeDoCardOutOfHome />
-                    </div>
-
+                    <WhatWeDoCard />
+                    <WhatWeDoCardCorporateRetreats />
+                    <WhatWeDoCardCreativeDesign />
+                    <WhatWeDoCardOutOfHome />
                 </div>
+
+
+
+                
             </div>
 
 
