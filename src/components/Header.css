@@ -6,9 +6,16 @@
     left: 0;
     display: flex;
     justify-content: center;
-    transition: background 0.3s, box-shadow 0.3s;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
     background: transparent;
     z-index: 1000;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
 }
 
 .navbar.scroll {
@@ -16,100 +23,116 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar.scroll .nav-links li:hover {
-    background-color: #adf201;
-}
-
-/* Container inside navbar */
+/* Container */
 .container {
     width: 100%;
-    height: auto;
-    max-width: 1200px;
-    /* padding-top: 15px;
-  padding-bottom: 15px; */
+    padding-left: clamp(10px, 30px, 40px);
+    padding-right: clamp(10px, 30px, 40px);
+    box-sizing: border-box;
+    max-height: 120px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 /* Brand */
 .brand {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
     cursor: pointer;
-    color: white;
-    transition: color 0.3s;
+
 }
 
 .brand-logo {
+    height: clamp(120px, 18vw, 190px);
+    margin-top: -20px;
     width: auto;
-    height: 100px;
+
 }
 
-
-.navbar.scroll .brand {
-    color: #333;
-}
-
-/* Nav links */
+/* Navigation */
 .nav-links {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 30px;
-    font-size: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
     cursor: pointer;
     color: white;
-    transition: color 0.3s;
-    background-color: transparent;
-    padding: 10px;
+    padding: clamp(10px, 1vw, 15px) clamp(3vw, 3.0vw, 90px);
+    transition: all 0.3s ease;
+    font-size: clamp(15px, 1.6vw, 30px);
+}
+
+.nav-links li:hover {
+    background-color: #adf201;
+    border-radius: 0 50px 50px 0;
+    transition: 0.3s ease-in-out;
+    color: #333;
 }
 
 .navbar.scroll .nav-links li {
     color: #333;
 }
 
-.nav-links li:hover {
+.navbar.scroll .nav-links li:hover {
     background-color: #adf201;
     color: #333;
-    transition: 0.3s ease;
-    /* blue on hover */
 }
 
-/* Mobile toggle */
+/* Hamburger */
 .toggler {
     display: none;
-    font-size: 1.5rem;
     background: none;
     border: none;
-    color: white;
     cursor: pointer;
+    font-size: 2rem;
+    color: white;
 }
 
 .navbar.scroll .toggler {
     color: #333;
 }
 
-/* Mobile responsive */
+/* ========================================= */
+/* Laptop & Tablet Landscape */
+/* ========================================= */
+
+@media (max-width: 1023px) {
+    /* .nav-links {
+        gap: 20px;
+    } */
+}
+
+/* ========================================= */
+/* Tablet & Mobile */
+/* ========================================= */
+
 @media (max-width: 768px) {
+
+    .brand-logo {
+        margin-top: 0px;
+    }
+
     .toggler {
         display: block;
+        font-size: 1.5rem;
+        margin-top: -5px;
     }
 
     .nav-links {
         position: absolute;
-        top: 100%;
-        right: 0;
-        background: white;
-        flex-direction: column;
+        top: 75%;
+        right: 15px;
         width: 200px;
         display: none;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     }
 
     .nav-links.open {
@@ -117,11 +140,40 @@
     }
 
     .nav-links li {
-        padding: 1rem;
         color: #333;
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
     }
 
     .nav-links li:hover {
-        color: #adf201;
+        background: #adf201;
+        color: #333;
+    }
+}
+
+/* ========================================= */
+/* Small Phones */
+/* ========================================= */
+
+@media (max-width: 479px) {
+
+    .brand-logo {
+        margin-top: 0px;
+    }
+
+
+    .nav-links {
+        width: 150px;
+    }
+
+
+    .toggler {
+        display: block;
+        font-size: 1.5rem;
+        margin-top: -20px;
     }
 }
